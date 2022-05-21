@@ -221,6 +221,5 @@ typeof {}; // "object"
 [closure]: https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Closures
 [fill]: https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/fill
 [reduce]: https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce
-[map]: https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 [typeof]: https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Operators/typeof
 [object.freeze]: https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze
