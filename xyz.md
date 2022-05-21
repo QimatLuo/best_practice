@@ -156,6 +156,8 @@ Cats 裡層取名 cat，dogs 裡層取名 dog，看起來非常正常，users, m
 
 其實你不太需要去看那些程式碼，因為被抽象後的東西都會像 library 一樣藏在後面，不需要去看它。
 
+### 範例 6
+
 ```js
 /* -- helper.js -- */
 const getName = (x) => x.name;
