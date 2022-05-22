@@ -167,9 +167,29 @@ console.log(getAges(cats)); // [3, 1]
 
 本文中的 `map()` 之所以能稱為高階函數是因為它把 function 當成參數讓人帶入，並回傳新的 function 當成值傳出。  
 所以只要你所寫的程式語言可以把 function 當成參數去傳遞的話，那麼這些觀念跟技巧都是可以通用的。  
-也就是你只要在該語言會寫 function，剩下的都是同一套邏輯就可以組出你需要的東西，學一套就萬用的觀念：[Functional programming]
+也就是你只要在該語言會寫 function，剩下的都是同一套邏輯就可以組出你需要的東西，學一套就萬用的觀念：[Functional programming]。  
+關於 FP 當然還有很多細節可以講，但這邊就不贅述了，我的主旨是透過情境式的假設並解釋如何應對。  
+想要更深入學習 FP 的人可以搜尋更專業的文章去了解 FP 的[更多好處]。
+
+在這一系列的觀念下，你會發現每個 function 都很精簡，只做獨立的事情，負責明確的任務。  
+而應用層面就是把這些 function 組合起來成你需要的情境，只要把組合後的 function 賦予命名就可以表達這個新 function 是做什麼用的。  
+所以只要你能讓程式本身可以表達出意思，那麼註解也不再需要了。
+
+唯一需要寫註解只有程式本身無法表達的部分，比如說工作曾經遇到的問題：
+
+```js
+prisma.on("beforeExit", () => new Promise(() => {}));
+```
+
+這一看就是一個沒用的程式碼，因為裡面根本沒做事。  
+但如果沒這行，我們的程式會有問題。  
+主要是因為我們當時在處理 NestJS graceful shutdown 的問題，lifecycle events 還沒處理完就被中斷了。  
+原因是 prisma 裡面也有 graceful shotdown 的 event hook，但如果你沒有註冊這個 event 的話 prisma 會主動把你的程式殺掉，導致 NestJS 的動作還沒做完程式就死了。  
+所以才需要這一行永遠不會 resolve 或 reject 的 promise 來阻止 prisma 殺掉我的程式。  
+這種情況就算用 function 包起來並給予命名也很難去解釋這個來由，所以會補上所謂真正的註解來說明此事。
 
 [範例 6]: https://github.com/QimatLuo/best_practice/blob/main/xyz.md#%E7%AF%84%E4%BE%8B-6
 [currying]: https://zh.wikipedia.org/wiki/%E6%9F%AF%E9%87%8C%E5%8C%96
 [高階函數]: https://zh.wikipedia.org/wiki/%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0
 [functional programming]: https://zh.wikipedia.org/zh-tw/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B
+[更多好處]: (https://jigsawye.gitbooks.io/mostly-adequate-guide/content/ch3.html)
