@@ -4,4 +4,5 @@
 如果有對文中感到疑慮之處歡迎開 Issue 討論。
 
 1. [一律使用 const](https://github.com/QimatLuo/best_practice/blob/main/var_let_const.md)。(不要竄改變數)
-2. [我喜歡用 x, y, z 命名](https://github.com/QimatLuo/best_practice/blob/main/xyz.md)。(抽象化你的思考方式)
+1. [我喜歡用 x, y, z 命名](https://github.com/QimatLuo/best_practice/blob/main/xyz.md)。(抽象化你的思考方式)
+1. [我幾乎不寫註解](https://github.com/QimatLuo/best_practice/blob/main/curry.md)。(程式本身就是註解)
