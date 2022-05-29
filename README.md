@@ -10,3 +10,4 @@
 1. [你還在寫 for？](https://github.com/QimatLuo/best_practice/blob/main/transducers.md)。(任何事都用 function 解決)
 1. [我愛 RxJS](https://github.com/QimatLuo/best_practice/blob/main/rxjs.md)。(統一窗口)
 1. [一切從最小單位出發](https://github.com/QimatLuo/best_practice/blob/main/atom.md)。(讓你的 observable 可被隨意組合)
+1. [Rx 界的 curry](https://github.com/QimatLuo/best_practice/blob/main/higher_order.md)。(Observable 的前處理)
