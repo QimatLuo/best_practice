@@ -1,4 +1,4 @@
-# 好久沒寫 if else 了，那是什麼？
+# 設計可被組合的 function 們
 
 ## pipe
 
