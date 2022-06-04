@@ -9,7 +9,7 @@
 # 程式設計
 
 1. [你還在寫 let？](https://github.com/QimatLuo/best_practice/blob/main/var_let_const.md)。(不要竄改變數)
-1. [我還在寫 長的變數名？](https://github.com/QimatLuo/best_practice/blob/main/xyz.md)。(抽象化你的思考方式)
+1. [你還在寫 長的變數名？](https://github.com/QimatLuo/best_practice/blob/main/xyz.md)。(抽象化你的思考方式)
 1. [你還在寫 註解？](https://github.com/QimatLuo/best_practice/blob/main/curry.md)。(程式本身就是註解)
 1. [你還在寫 if？](https://github.com/QimatLuo/best_practice/blob/main/if.md)。(function 不是抽出去就好了)
 1. [你還在寫 for？](https://github.com/QimatLuo/best_practice/blob/main/transducers.md)。(任何事都用 function 解決)
