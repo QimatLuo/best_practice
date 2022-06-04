@@ -12,10 +12,18 @@
 ### 範例 1
 
 ```html
-<header>{{ title }}</header>
+<header>新增</header>
 <form>
-  <input />
-  ...
+  <input name="id" />
+  <input name="name" />
+  <button type="submit">Submit</button>
+</form>
+```
+
+```html
+<header>編輯</header>
+<form>
+  <input name="name" />
   <button type="submit">Submit</button>
 </form>
 ```
@@ -74,12 +82,12 @@
 ```html
 <header>{{ title }}</header>
 <form>
-  <slot>
-  <button type="submit">Submit</button>
+  <slot />
+  <button type="submit">{{ btnText }}</button>
 </form>
 ```
 
-如果 UI 設計上不同欄位而是同樣欄位只做 enable/disable，那麼重複性就會很高。  
+如果 UI 設計上不是不同欄位，而是同樣欄位只做 enable/disable，那麼重複性就會很高。  
 這時候既然重複性本質是在 enable/disable，那麼抽象的就不是欄位，而是屬性值。  
 經過上述的學習，我們不應該在抽象屬性值時讓 share component 用 `if` 去判斷是否該 enable/disable，而是讓用 component 的地方決定該屬性是什麼。
 
@@ -105,8 +113,6 @@ function decrease() {
 但是如果直接把加完或減完後的結果傳進來也有困難，因為所謂 +1 就是要先拿原本的值然後再加上去，所以會先有個 SQL query 拿到原本的值才能做加或減。  
 這時候就可以把介面設計成讓別人帶 function 進來，然後這個 share function 會負責呼叫別人帶入的 function 並且帶入 SQL query 拿到的原本的值。  
 被帶入的 function 會實際做 +1 或 -1 的動作，這樣我們就可以不用寫 `if` 來完成我們抽象的功能。
-
-### 範例 4
 
 ```js
 function set(f) {
