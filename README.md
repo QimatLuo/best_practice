@@ -11,6 +11,7 @@
 1. [一律使用 const](https://github.com/QimatLuo/best_practice/blob/main/var_let_const.md)。(不要竄改變數)
 1. [我喜歡用 x, y, z 命名](https://github.com/QimatLuo/best_practice/blob/main/xyz.md)。(抽象化你的思考方式)
 1. [我幾乎不寫註解](https://github.com/QimatLuo/best_practice/blob/main/curry.md)。(程式本身就是註解)
+1. [你還在寫 if？](https://github.com/QimatLuo/best_practice/blob/main/if.md)。(function 不是抽出去就好了)
 1. [你還在寫 for？](https://github.com/QimatLuo/best_practice/blob/main/transducers.md)。(任何事都用 function 解決)
 1. [我愛 RxJS](https://github.com/QimatLuo/best_practice/blob/main/rxjs.md)。(統一窗口)
 1. [一切從最小單位出發](https://github.com/QimatLuo/best_practice/blob/main/atom.md)。(讓你的 observable 可被隨意組合)
