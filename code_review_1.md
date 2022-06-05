@@ -117,7 +117,7 @@ const request = onAuditSubmit.pipe(
 ### 範例 4
 
 ```js
-const request = combineLatest(body, headers).pipe(
+const request = zip(body, headers).pipe(
   map(([x, h]) => api(x, h))
 );
 ```
