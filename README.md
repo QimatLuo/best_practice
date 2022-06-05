@@ -40,4 +40,5 @@
 
 # Git
 
-1. [你有沒有拆 commit 呢？](https://github.com/QimatLuo/best_practice/blob/main/var_let_const.md)。(留後路)
+1. [你有沒有拆 commit 呢？](https://github.com/QimatLuo/best_practice/blob/main/commit.md)。(留後路)
+1. [不必是當事人也可以正確地解衝突](https://github.com/QimatLuo/best_practice/blob/main/conflict.md)。(diff3)
