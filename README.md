@@ -23,23 +23,23 @@
 
 ## 概念
 
-1. [你還在寫 let？](https://github.com/QimatLuo/best_practice/blob/main/var_let_const.md)。(不要竄改變數)
-1. [你還在寫 長的變數名？](https://github.com/QimatLuo/best_practice/blob/main/xyz.md)。(抽象化你的思考方式)
-1. [你還在寫 註解？](https://github.com/QimatLuo/best_practice/blob/main/curry.md)。(程式本身就是註解)
-1. [你還在寫 if？](https://github.com/QimatLuo/best_practice/blob/main/if.md)。(function 不是抽出去就好了)
-1. [你還在寫 for？](https://github.com/QimatLuo/best_practice/blob/main/transducers.md)。(任何事都用 function 解決)
-1. [你還在寫 this？](https://github.com/QimatLuo/best_practice/blob/main/this.md)。(學一套，到處用)
-1. [我愛 RxJS](https://github.com/QimatLuo/best_practice/blob/main/rxjs.md)。(統一窗口)
-1. [一切從最小單位出發](https://github.com/QimatLuo/best_practice/blob/main/atom.md)。(讓你的 observable 可被隨意組合)
-1. [Rx 界的 curry](https://github.com/QimatLuo/best_practice/blob/main/higher_order.md)。(Observable 的前處理)
+1. [你還在寫 let？](/var_let_const.md)。(不要竄改變數)
+1. [你還在寫 長的變數名？](/xyz.md)。(抽象化你的思考方式)
+1. [你還在寫 註解？](/curry.md)。(程式本身就是註解)
+1. [你還在寫 if？](/if.md)。(function 不是抽出去就好了)
+1. [你還在寫 for？](/transducers.md)。(任何事都用 function 解決)
+1. [你還在寫 this？](/this.md)。(學一套，到處用)
+1. [我愛 RxJS](/rxjs.md)。(統一窗口)
+1. [一切從最小單位出發](/atom.md)。(讓你的 observable 可被隨意組合)
+1. [Rx 界的 curry](/higher_order.md)。(Observable 的前處理)
 
 ## 實例
 
-- [避免改動原本邏輯](https://github.com/QimatLuo/best_practice/blob/main/code_review_1.md)。
-- [避免竄改變數](https://github.com/QimatLuo/best_practice/blob/main/code_review_2.md)。
+- [避免改動原本邏輯](/code_review_1.md)。
+- [避免竄改變數](/code_review_2.md)。
 - [loop 一律用 expand()](/code_review_3.md)。
 
 # Git
 
-1. [你有沒有拆 commit 呢？](https://github.com/QimatLuo/best_practice/blob/main/commit.md)。(留後路)
-1. [不必是當事人也可以正確地解衝突](https://github.com/QimatLuo/best_practice/blob/main/conflict.md)。(diff3)
+1. [你有沒有拆 commit 呢？](/commit.md)。(留後路)
+1. [不必是當事人也可以正確地解衝突](/conflict.md)。(diff3)
