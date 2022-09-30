@@ -45,9 +45,9 @@ this.api()
   .pipe(
     expand(() =>
       timer(3000).pipe(
-        switchMap(() => this.api()),
+        switchMap(() => this.api())
       )
-    ),
+    )
   )
   .subscribe((x) => {
     this.ui = x;
@@ -66,9 +66,9 @@ this.api()
   .pipe(
     expand(() =>
       race(timer(3000), this.refresh).pipe(
-        switchMap(() => this.api()),
+        switchMap(() => this.api())
       )
-    ),
+    )
   )
   .subscribe((x) => {
     this.ui = x;
@@ -85,10 +85,10 @@ this.api()
   .pipe(
     expand(() =>
       race(timer(3000), this.refresh).pipe(
-        switchMap(() => this.api()),
+        switchMap(() => this.api())
       )
     ),
-    take(1),
+    take(1)
   )
   .subscribe((x) => {
     this.ui = x;
@@ -104,9 +104,9 @@ this.api()
   .pipe(
     expand(() =>
       race(timer(3000), this.refresh.pipe(take(1))).pipe(
-        switchMap(() => this.api()),
+        switchMap(() => this.api())
       )
-    ),
+    )
   )
   .subscribe((x) => {
     this.ui = x;
@@ -122,7 +122,7 @@ this.api()
 ```ts
 interval(1000).pipe(
   tap(x => console.log('interval', x)),
-  switchMap(() => this.api()),
+  switchMap(() => this.api())
 )
 ```
 
@@ -135,6 +135,6 @@ interval(1000).pipe(
 以上種種個人還是建議用 expand() 來實作，才不會被 interval() + xxMap() 所產生的特例暴雷。
 雖然 interval() 在想法上比較容易建構，透過 expand() 實作只要換個思考方式就可以完成，應該不會太難，且只要確保內部的流會完成就好了，不能確保的話無腦一律加上 take(1) 其實也沒差。
 
-[Angular Taiwan](https://www.facebook.com/groups/augularjs.tw/?multi_permalinks=5864813023529019)
-[用 RxJS 翻轉你的 coding 人生 - 以 Timer 為例](https://blog.leochen.dev/2022/09/29/timer-sample-in-rxjs/)
-[範例](https://jsbin.com/sacikupapo/1/edit?html,js,console,output)
+[Angular Taiwan]: https://www.facebook.com/groups/augularjs.tw/?multi_permalinks=5864813023529019
+[用 RxJS 翻轉你的 coding 人生 - 以 Timer 為例]: https://blog.leochen.dev/2022/09/29/timer-sample-in-rxjs/
+[範例]: https://jsbin.com/sacikupapo/1/edit?html,js,console,output
