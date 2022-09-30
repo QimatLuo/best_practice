@@ -37,6 +37,7 @@
 
 - [避免改動原本邏輯](https://github.com/QimatLuo/best_practice/blob/main/code_review_1.md)。
 - [避免竄改變數](https://github.com/QimatLuo/best_practice/blob/main/code_review_2.md)。
+- [loop 一律用 expand()](/code_review_3.md)。
 
 # Git
 
