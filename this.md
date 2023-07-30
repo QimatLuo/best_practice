@@ -79,5 +79,5 @@ OOP 為了避免不好的寫法當然也有一系列對應的處理方式： [OO
 function 是各種語言基本上都會有的東西，所以理當 FP 學好就同等於萬用。  
 如果學一種概念就可以萬用，那為什麼要學其他不能萬用的概念呢？
 
-[oop vs fp]: http://ww4.sinaimg.cn/large/62752320gw1emtdnwa0fpj20hr0ce75f.jpg
+[oop vs fp]: https://blog.cleancoder.com/uncle-bob/images/fpvsoo.jpg
 [sub classing with extends]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#sub_classing_with_extends
